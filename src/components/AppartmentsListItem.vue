@@ -2,7 +2,7 @@
   <div class="appartments">
     <appartments-photo
       v-if="openPhoto"
-      :numberPhoto="counter"
+      :numberPhoto="element.number"
       @close="openPhoto = false"
     />
     <div class="appartments__photo-container">

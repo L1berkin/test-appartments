@@ -54,6 +54,8 @@ export default {
 .appartments-photo {
   width: 60%;
   margin-top: 30px;
+  transform: translateY(-150%);
+  animation: slideDown .6s ease-in-out 0s forwards 1;
 }
 
 .appartments-photo__photo {
@@ -65,5 +67,14 @@ export default {
   right: 50px;
   top: 30px;
   cursor: pointer;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 </style>
